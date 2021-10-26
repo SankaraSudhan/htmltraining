@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search trains</title>
+</head>
+<body>
+    <h1>Book Your Tickets!</h1>
+    <form action="Availabletrains.html">
+        <div>
+        <label for="from station">From</label>
+        <input type="text" name="from station" id="fromStation" placeholder="search station name"required autofocus list="stations"><br><br>
+        <datalist id="stations">
+            <option disabled>-------SELECT THE STATION-------</option>
+            <option value="CHE">Chennai</option>
+            <option value="DGL">Dindigul</option>
+            <option value="MDU">Madurai</option>
+        </datalist>
+        </div>
+        <label for="to station">To</label>
+        <input type="text" name="to station" id="to station" placeholder="search station name"required list="stations">
+        <datalist id="stations">
+            <option disabled>-------SELECT THE STATION-------</option>
+            <option value="CHE">Chennai</option>
+            <option value="DGL">Dindigul</option>
+            <option value="MDU">Madurai</option>
+        </datalist><BR><BR>
+<label for="journey date">Journey date</label>
+<input type="date" name="date" id="name" required min="2021-10-18" max="2021-12-24" value="2021-10-21"><BR><BR>
+<button type="submit"><b>Submit</b></button>
+<button type="reset"><b>Reset</b></button>
+    </form>
+</body>
+</html>
